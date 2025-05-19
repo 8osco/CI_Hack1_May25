@@ -3,7 +3,7 @@
 This is a study on how personal attributes and geographic factors influence insurance charges based on a healthcare insurance dataset extracted from Kaggle.
 
 # ![logo](https://storage.googleapis.com/kaggle-datasets-images/3852935/6678394/92af7560770ed0fc7cfdb3e96f33f51e/dataset-cover.jpg?t=2023-10-12-20-28-56)
-<!-- will need testing out how to change sizes later <img src="dataset-cover.jpg" alt="Description" width="400" height="100"/> -->
+
 
 ## Dataset Content
 The dataset contains information on the relationship between personal attributes (age, gender, BMI, family size, smoking habits) and geographic factors and their impact on medical insurance charges.  This can be downloaded from the link below.
@@ -16,8 +16,9 @@ https://www.kaggle.com/datasets/willianoliveiragibin/healthcare-insurance
 2) Visualise correlations between different attributes and insurance charges.
 3) Geographic Analysis: Visualise the impact of geographic regions on insurance charges.
 
+
 ## Hypothesis and how to validate?
-Insurance charge is expected to: 
+Insurance charge is expected to:
 
 1) increase with age
 2) be higher for smoker
@@ -30,59 +31,56 @@ We will examine and validate through analyses and visualisations that are set ou
 
 
 ## Project Plan
-* Outline the high-level steps taken for the analysis.
-* How was the data managed throughout the collection, processing, analysis and interpretation steps?
-* Why did you choose the research methodologies you used?
+Project is managed over 6 stages, supported by GitHub project board (https://github.com/users/8osco/projects/6/views/1):
 
-
+1) Project setup with new GitHub repo for storage and version control, VScode as IDE, and access to Kaggle for dataset
+2) Data extract and familiarisation
+3) Data cleaning and preparation
+4) Data quality check
+5) Data analysis and visualisation
+6) README documentation
 
 
 ## The rationale to map the business requirements to the Data Visualisations
-* List your business requirements and a rationale to map them to the Data Visualisations
+Insurance charges are set based on a number of factors.  The relationships between charges and these factors are best examined and visualised in charts.  Interactive features are invaluable for comparison between factors and combination of factors, when they are carefully designed.  They can also help identify outliers or areas for further examinations more easily.
+
+The relationship between charges and age, for example, would be best represented in a chart, given the value range of both variables.  Generation of subplots to further break down the relationship by region, gender, smoker status, etc provide greater information to help understand the inter-relationships amongst the variables.
+
 
 ## Analysis techniques used
-* List the data analysis methods used and explain limitations or alternative approaches.
-* How did you structure the data analysis techniques. Justify your response.
-* Did the data limit you, and did you use an alternative approach to meet these challenges?
-* How did you use generative AI tools to help with ideation, design thinking and code optimisation?
+My analysis begins with data familiarisation and an attempt to understand the data distribution.
+
+This provides some indication on the materiality of different factors and limitations of the analysis (e.g. due to limited data points available).
+
+This helps prioritise and feed into the design of the visualisations.
+
+Interactive features are particularly useful for this project, for providing and comparing between visualisations to help observe relationships and patterns.  Code Institute learning materials, tutoring and AI tools have been helpful in every stage from visual designs, code optimisation, visualisation enhancements.
+
 
 ## Ethical considerations
-* Were there any data privacy, bias or fairness issues with the data?
-* How did you overcome any legal or societal issues?
+The data has already been anonymised at source.
 
+The results of the analysis may pose potential ethical questions, for example if charges are noticeably higher in a region a consistent differential between male and female charges.
 
 ## Unfixed Bugs
-* Please mention unfixed bugs and why they were not fixed. This section should include shortcomings of the frameworks or technologies used. Although time can be a significant variable to consider, paucity of time and difficulty understanding implementation are not valid reasons to leave bugs unfixed.
-* Did you recognise gaps in your knowledge, and how did you address them?
-* If applicable, include evidence of feedback received (from peers or instructors) and how it improved your approach or understanding.
+I was exploring the use of dotted lines in the plots to help make clearer distinctions between lines.  Whilst the AI tool offer some suggestions, it was not successfully implemented.  This is to be further experimented.
+
+The image added on top of this README file does not seem to load on GitHub, although it can be seen here in the VScode preview.  I would like to follow up to understand.  I have tried changing the image size with this code also: "<img src="dataset-cover.jpg" alt="Description" width="400" height="100"/>", but it didn't work.
 
 ## Development Roadmap
-* What challenges did you face, and what strategies were used to overcome these challenges?
-* What new skills or tools do you plan to learn next based on your project experience? 
+There are many routes from both coding and data structuring perspective to arrive at the some output.  I would like to explore the most efficient and effective way to do this, through further testing and experimenting, and getting a better handle on the strengths and limitations of different packages.
 
-# talk about need of testing packages in advance e.g. for plotly and what were learnt!!!
 
 ## Main Data Analysis Libraries
-* Here you should list the libraries you used in the project and provide an example(s) of how you used these libraries.
+NumPy and Pandas for data interrogation and manuipulation.
+Seaborn and Plotly, supported by Matplotlib, for the visualisations.
 
 
-## Credits 
-
-* In this section, you need to reference where you got your content, media and extra help from. It is common practice to use code from other repositories and tutorials, however, it is important to be very specific about these sources to avoid plagiarism. 
-* You can break the credits section up into Content and Media, depending on what you have included in your project. 
-
-### Content 
-
-- The text for the Home page was taken from Wikipedia Article A
-- Instructions on how to implement form validation on the Sign-Up page was taken from [Specific YouTube Tutorial](https://www.youtube.com/)
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/)
-
-### Media
-
-- The photos used on the home and sign-up page are from This Open-Source site
-- The images used for the gallery page were taken from this other open-source site
+## Credits
+Code Institute course materials, SME, data coach, PDBA sessions.
+ChatGPT for code clarification and creation.
+The image at the top of this README file was sourced from Kaggle.
 
 
-
-## Acknowledgements (optional)
-* Thank the people who provided support through this project.
+## Acknowledgements
+A special thanks to Project Group 2, Apr 2025 data analytics cohort and coaches. The support received and discussions have been invaluable.
